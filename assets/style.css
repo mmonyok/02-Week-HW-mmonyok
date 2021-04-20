@@ -1,0 +1,158 @@
+/* Variables */
+:root {
+    --green: #6b8f24;
+}
+/* Universal Selector */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Element Selectors */
+body {
+    color: black;
+    background-color: blanchedalmond;
+    font-family: "New Century Schoolbook", "TeX Gyre Schola", serif;
+    font-size: 20px;
+    position: relative;
+}
+
+/* Melody Monyok displayed left in header */
+header h1 {
+    display: inline-block;
+    margin-top: 15px;
+    margin-left: 20px;
+}
+
+/* Nav Bar displayed right in header */
+nav {
+    margin-top: 15px;
+    margin-right: 20px;
+    float: right;
+}
+
+h2 {
+    margin: 20px;
+}
+
+main {
+    padding: 50px 0;
+}
+
+li {
+    display: inline;
+    padding: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+header,
+footer {
+    background-color: #6b8f24;
+    line-height: 30px;
+    height: 60px;
+    width: 100%;
+}
+
+header {
+    position: fixed;
+    border-bottom: 10px solid rgb(255, 136, 156);
+}
+
+footer {
+    position: absolute;
+    margin-top: 0;
+    bottom: 0;
+    border-bottom: 10px solid #ff889c;
+}
+
+figure {
+    margin-bottom: 30px;
+}
+
+img {
+    margin: 20px auto;
+    display: block;
+}
+
+section {
+    margin-bottom: -5px;
+    padding: 20px 10px 40px 10px;
+    border-top: 4px solid #ff889c;
+    background-color: pink;
+}
+
+form {
+    /* centering form on page */
+    margin: 0 auto;
+    width: 400px;
+    padding: 10px;
+    border: 4px solid #ff889c;
+    border-radius: 25px;
+}
+
+label {
+    display: inline-block;
+    width: 60px;
+}
+
+input,
+textarea {
+    box-sizing: border-box;
+    width: 300px;
+    border: 1px solid #ff889c;
+}
+
+textarea {
+
+}
+
+button {
+    height: 40px;
+    width: 120px;
+    background-color: pink;
+    color: black;
+    border-left: 2px solid #ff889c;
+    border-top: 2px solid #ff889c;
+    border-bottom: 2px solid #ff284c;
+    border-right: 2px solid #ff284c;
+}
+
+/* Class Selectors */
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.card-header {
+    position: relative;
+    margin-top: -20px;
+}
+
+.card {
+    border: 3px dashed var(--green);
+    width: 400px;
+    height: 400px;
+}
