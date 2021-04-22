@@ -1,6 +1,9 @@
 /* Variables */
 :root {
-    --green: #6b8f24;
+    --green: rgb(107, 143, 36);
+    --background: rgb(114, 68, 55);
+    --border: rgb(174, 190, 250);
+    --font: rgb(214, 239, 155);
 }
 /* Universal Selector */
 * {
@@ -10,8 +13,8 @@
 
 /* Element Selectors */
 body {
-    color: black;
-    background-color: blanchedalmond;
+    color: var(--font);
+    background-color: var(--background);
     font-family: "New Century Schoolbook", "TeX Gyre Schola", serif;
     font-size: 20px;
     position: relative;
@@ -31,8 +34,8 @@ nav {
     float: right;
 }
 
-h2 {
-    margin: 20px;
+figure {
+    margin-top: 20px;
 }
 
 main {
@@ -46,7 +49,7 @@ li {
 
 a {
     text-decoration: none;
-    color: black;
+    color: var(--font);
 }
 
 header,
@@ -59,38 +62,26 @@ footer {
 
 header {
     position: fixed;
-    border-bottom: 10px solid rgb(255, 136, 156);
+    border-bottom: 10px solid var(--border));
 }
 
 footer {
     position: absolute;
     margin-top: 0;
     bottom: 0;
-    border-bottom: 10px solid #ff889c;
-}
-
-figure {
-    margin-bottom: 30px;
-}
-
-img {
-    margin: 20px auto;
-    display: block;
+    border-bottom: 10px solid var(--border);
 }
 
 section {
     margin-bottom: -5px;
-    padding: 20px 10px 40px 10px;
-    border-top: 4px solid #ff889c;
-    background-color: pink;
+    border-top: 4px solid var(--border);
 }
 
 form {
-    /* centering form on page */
     margin: 0 auto;
     width: 400px;
     padding: 10px;
-    border: 4px solid #ff889c;
+    border: 4px solid var(--border);
     border-radius: 25px;
 }
 
@@ -103,11 +94,7 @@ input,
 textarea {
     box-sizing: border-box;
     width: 300px;
-    border: 1px solid #ff889c;
-}
-
-textarea {
-
+    border: 1px solid var(--border);
 }
 
 button {
@@ -122,16 +109,37 @@ button {
 }
 
 /* Class Selectors */
-.text-center {
+.card-links {
+    position: absolute;
+    bottom: 0;
+}
+
+.card {
+    border: 3px solid var(--green);
+    width: 400px;
+    height: 400px;
+    position: relative;
+}
+
+.card-header {
+    position: relative;
+    margin-top: -20px;
+    border: 5px solid var(--border);
+    border-radius: 10px;
+    background-color: var(--background);
     text-align: center;
 }
 
-.text-right {
-    text-align: right;
+.card-image {
+    width: 250px;
+    display: inherit;
+    margin: auto;
 }
 
-.text-left {
-    text-align: left;
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .flex-row {
@@ -140,19 +148,39 @@ button {
     flex-wrap: wrap;
 }
 
-.flex-column {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
+.heading-section {
+    border-right: 5px solid white;
+    line-height: 120px;
+    margin: 0;
 }
 
-.card-header {
-    position: relative;
-    margin-top: -20px;
+.in-line {
+    display: inline-block
 }
 
-.card {
-    border: 3px dashed var(--green);
-    width: 400px;
-    height: 400px;
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+/*ID Selectors */
+#main-image {
+    height: 800px;
+    border: 5px solid var(--border);
+}
+
+#melody {
+    width: 300px;
+    border: 5px solid black;
+}
+
+#paragraph {
+
 }
