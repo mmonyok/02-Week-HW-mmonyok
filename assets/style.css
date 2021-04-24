@@ -16,6 +16,10 @@ body {
     background-color: var(--background);
     color: var(--text);
 }
+
+div p {
+    margin-left: 1em;
+}
 h1 {
     margin: 0;
 }
@@ -62,7 +66,7 @@ ul li {
 
 section {
     display: flex;
-    justify-content: space-around;
+    /*justify-content: space-around;*/
 }
 
 a[target*="blank"] {
@@ -130,7 +134,7 @@ a[href*="linkedin"] {
     display: flex;
     align-items: center;
     padding-right: 20px;
-    width: 150px;
+    min-width: 150px;
 }
 
 .textCenter {
@@ -154,9 +158,10 @@ a[href*="linkedin"] {
 
 #portfolioCards {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
-    width: 100%;
+    width: 1000px;
 }
 
 #subtitle {
@@ -171,9 +176,9 @@ a[href*="linkedin"] {
 /* These are the card image IDs for the Portfolio section */
 #mainCard {
     height: 400px;
-    width: 800px;
+    width: 855px;
     background-image: url(./Images/shottyDepth.jpg);
-    background-size: 800px 400px;
+    background-size: 855px 400px;
 }
 
 div[class*="cardImage"] {
