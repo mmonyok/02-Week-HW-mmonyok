@@ -17,9 +17,11 @@ body {
     color: var(--text);
 }
 
-div p {
-    margin-left: 1em;
+div ul {
+    margin-left: 25px;
+    padding: 0;
 }
+
 h1 {
     margin: 0;
 }
@@ -53,13 +55,17 @@ li {
     display: inline;
 }
 
+main {
+
+}
+
 nav {
     display: flex;
     align-items: center;
 }
 
 ul li {
-    margin: 25px;
+    margin-right: 25px;
     padding-bottom: 5px;
     border-bottom: var(--borderThickness) solid var(--border);
 }
@@ -142,6 +148,11 @@ a[href*="linkedin"] {
 }
 
 /*ID Selectors*/
+#allAboutMe {
+    margin-left: 25px;
+    max-width: 855px;
+}
+
 #backgroundImage {
     height: 200px;
     display: flex;
@@ -211,3 +222,4 @@ div[class*="cardImage"]:hover {
     background-size: 400px 200px;
 }
 
+@media
