@@ -10,6 +10,7 @@
 - Add new projects as they come up.
 - Adding Javascript features once I am more knowledgeable.
 - Create a brand icon and feature it as the favicon.
+- Update Responsive Web Design to accomodate many more screen sizes.
 
 ## Credits
 - Rhyce Erickson walked me through some of the trickier bits I was struggling with when it came to flex box. Thanks, Rhyce!

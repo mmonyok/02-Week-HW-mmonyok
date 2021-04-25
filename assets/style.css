@@ -222,4 +222,12 @@ div[class*="cardImage"]:hover {
     background-size: 400px 200px;
 }
 
-@media
+@media screen and (max-width: 675px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        border-bottom: var(--borderThickness) solid var(--border);
+    }
+}
+
